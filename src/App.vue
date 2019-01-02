@@ -1,18 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="navbar">
+      <ul class="nav navbar-nav">
+        <li>
+          <router-link to="/">VueFire</router-link>
+        </li>
+        <!--<li v-if="!authUser">-->
+          <!--<router-link to="/sign-in">SignIn</router-link>-->
+        <!--</li>-->
+        <!--<li v-if="!authUser">-->
+          <!--<router-link to="/sign-up">SignUp</router-link>-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<a @click="logout"> Logout</a>-->
+          <!--<a href="#"></a>-->
+        <!--</li>-->
+      </ul>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
