@@ -5,16 +5,6 @@
         <li>
           <router-link to="/">VueFire</router-link>
         </li>
-        <!--<li v-if="!authUser">-->
-          <!--<router-link to="/sign-in">SignIn</router-link>-->
-        <!--</li>-->
-        <!--<li v-if="!authUser">-->
-          <!--<router-link to="/sign-up">SignUp</router-link>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a @click="logout"> Logout</a>-->
-          <!--<a href="#"></a>-->
-        <!--</li>-->
       </ul>
     </div>
     <router-view/>
